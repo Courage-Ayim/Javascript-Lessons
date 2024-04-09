@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Changing Inner Text</title>
+    </head>
+    <body>
+        <h1>Welcome page</h1>     
+        <p id="greeting">       
+            Hi!     
+        </p> 
+        
+        <script>
+        //innerText is used to change the inner text btw a html element
+            console.log(document.body.children.greeting.innerText ='Bye');
+            console.log(document.body.children.greeting.innerHTML = '<b>Bye</b>'); //innerHTML will consider the inner html element
+            //<b></b> is the html element for bold so it will bold the Bye
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Method</title>
+</head>
+<body>
+    <script>
+        let currentDateTime = new Date(); //date constructor
+        console.log(currentDateTime);
+        
+        let now2 = Date.now(); //now() method returns the current date and time in unix epoch format
+        console.log(now2); 
+
+        let milliDate = new Date(1000); 
+        console.log(milliDate); 
+
+        let stringDate = new Date("Sat Jun 05 2021 12:40:12 GMT+0300"); //displays the time depending on my time zone
+        console.log(stringDate); 
+
+        let specificDate = new Date(2022, 1, 10, 12, 10, 15, 100);//specific date format
+        //Note! the first parameter is the year;
+        //  the second parameter is the month. 0 is for January and 11 is for December
+        console.log(specificDate); 
+    </script>
+</body>
+</html>

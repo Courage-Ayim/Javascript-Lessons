@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>   
+    <body>
+        
+        <style>      
+            .hide {        
+                display: none;      
+                }      
+                .square {        
+                    height: 100px;        
+                    width: 100px;        
+                    background-color: yellow;      
+                }      
+                .square.blue {        
+                    background-color: blue;     
+                }    
+            </style>     
+            <div id="shape" class="square blue"></div>          
+            <button onclick="disappear()">Disappear!</button> 
+            
+        <script>       
+            function disappear(){         
+                document.getElementById("shape").classList.add("hide");       
+            }    
+        </script>     
+        
+        <!--In this example, we have some CSS speciﬁed in the style tag. 
+            Elements with the hide class have a display : none style, meaning they are hidden. 
+            Elements with the square class are 100 by 100 pixels and are yellow. 
+            But when they have both the square and blue class, they are blue.
+            When we click on the Disappear! button, the disappear() function gets called. 
+            This one is speciﬁed in the script tag. 
+            The disappear() function changes the classes by getting the classList property of the element with the ID shape , 
+            which is the square we are seeing. 
+            We are adding the hide class to the classList and because of this, the elements get the display: none layout 
+            and we can no longer see it
+
+        -->
+    </body>
+</html>

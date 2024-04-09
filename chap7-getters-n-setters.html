@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            #firstName
+            #lastName
+            constructor(firstName, lastName){
+                this.#firstName = firstName;
+                this.#lastName = lastName;
+            }
+            get  firstName(){
+                return this.#firstName
+            }
+            set firstName(firstName){
+                this.#firstName = firstName
+            }
+            get lastName(){
+                return this.#lastName
+            }
+            set lastName(lastName){
+                this.lastName = lastName
+            }
+        }
+        //get is used to get data from the class
+        //set is used to set data fields on a class
+        let p = new Person("Courage", "Ayim")
+        console.log(p.firstName)
+        
+    </script>
+</body>
+</html>

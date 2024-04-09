@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ar to the spread operator, we have the rest parameter. 
+        //it has the same symbol as the spread operator, 
+        //but it is used inside the function parameter list.
+        function someFunct(param1, ...param2) //...param2 is the rest function.
+        {
+            console.log(param1, param2);
+        }
+        someFunct("hi", "there", "how", "are", "u"); //there are 5 parameters here
+       // the second parameter has changed into an array, containing our second and third arguments.
+       // This can be useful whenever you are not sure what number of arguments you will get
+
+    </script>
+</body>
+</html>

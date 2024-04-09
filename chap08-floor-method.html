@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Method</title>
+</head>
+<body>
+    <script>
+        let x = 6.78;
+        let y = 5.34;
+        console.log("X:", x, "becomes", Math.floor(x)); 
+        console.log("Y:", y, "becomes", Math.floor(y)); 
+        //foor() method rounds down a decimal number to an integer regardless of the number after the decimal is > 5;
+        //note! floor() is doing the direct opposite of the ceil( ) method.
+        //6.78=6
+        //5.34=5
+
+
+        //careful with negative numbers here, because it can feel counterintuitive:
+        let negativeX = -x;
+        let negativeY = -y
+        console.log("negativeX:", negativeX, "becomes", Math.floor(negativeX));
+        console.log("negativeY:", negativeY, "becomes", Math.floor(negativeY));
+        //-6.78=-7; -7<-6
+        //-5.34=-6; -6<-5
+
+
+
+    </script>
+</body>
+</html>

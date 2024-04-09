@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 5.4</title>
+</head>
+<body>
+    <script> //This code will create a table of numbers from 0 to 18 i.e 3*6.
+        let myTable = [];
+        let rows = 3;
+        let cols = 6;
+        let counter = 0;
+        for (let y = 0; y < rows; y++){
+            let tempTable = [];
+            for (let x = 0; x < cols; x++){
+                counter++;
+                tempTable.push(counter);
+            }
+            myTable.push(tempTable);
+        }
+        console.table(myTable)
+        
+    </script>
+</body>
+</html>

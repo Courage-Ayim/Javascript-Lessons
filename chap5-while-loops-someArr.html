@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let someArr = ["Courage", "Ayim", "Emmy", "Oyere", "Loana", "Ning"];
+            let notFound = true;
+            while (notFound && someArr.length > 0) { //length>0 to avoid an infinite loop.
+            if (someArr[0]==="Loana") {
+                console.log ("Found Her!")
+                 notFound = false;
+            }
+            else {
+                someArr.shift();
+            }
+        }
+        /*The following takes someArr and checks if the first element is loana
+        if the first is not Loana it returns true and delete the element.
+        when it meets Loana it stops and return Found Her! and notFoud to be false */
+    </script>
+</body>
+</html>

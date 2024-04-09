@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 3.2</title>
+</head>
+<body>
+    <script>
+        const arrShoppingList = []; //create empty array.
+        arrShoppingList.push("milk", "bread", "apples"); //add items.
+        arrShoppingList.splice(1, 1, "bananas", "eggs"); //update or replace bread
+        const removeLast = arrShoppingList.pop(); //delete last element.
+        console.log(arrShoppingList);
+        arrShoppingList.sort(); // sort the list in alphabetic order.
+        console.log(arrShoppingList.indexOf("milk")); //get the index position of milk.
+        arrShoppingList.splice(1, 0, "carrots", "lettuce"); //after banana add the following items.
+        const arrNewList = ["juice", "pop"]; // create a new array
+        newArr = arrShoppingList.concat(arrNewList, arrNewList); //add the new array to the old array twice.
+        finalArr = newArr.lastIndexOf("pop"); //get the index of the last occurence of pop.
+        console.log(finalArr); //display final array in the console
+
+
+
+
+
+    </script>
+</body>
+</html>

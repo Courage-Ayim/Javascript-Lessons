@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Accessing Elements</title>
+    </head>   
+    <body>     
+        <h1>Just an example</h1>     
+        <div id="one" class="example">Hi!</div>    
+        <div id="two" class="example">Hi!</div>     
+        <div id="three" class="something">Hi!</div> 
+        <script>
+            //getElementByTagName() method is used to access html elements.
+            //  we get an array as a result which is an HTMLCollection.
+            //to access the elements in the array we use item() method by index and nameItem() method by name when it has an id.
+        
+            console.log(document.getElementsByTagName('div'));
+            console.log(document.getElementsByTagName('div').item(1));
+            console.log(document.getElementsByTagName('div').namedItem('one'));
+            
+           
+        </script>  
+    </body> 
+    </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Methods</title>
+</head>
+<body>
+    <script>
+        let x = 6.78;
+        let y = 5.34;
+        console.log(Math.ceil(x));
+        console.log(Math.ceil(y));
+        //ceil() method rounds up a number regardless of the number after the decimal less than 5
+        //therefore 6.78=7
+        //5.34=6, note! 3<5 but it still rounds up
+
+
+        let negativeX = -x; 
+        let negativeY = -y; 
+        console.log("negativeX:", negativeX, "becomes", Math.ceil(negativeX)); 
+        console.log("negativeY:", negativeY, "becomes", Math.ceil(negativeY));
+        //Careful with negative numbers here, because -5 is higher than -6
+        //-6.78=-6
+        //-5.34=-5
+
+    </script>
+</body>
+</html>

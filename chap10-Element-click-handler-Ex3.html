@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Click Handler</title>
+</head>
+<body>
+    <div id="one">
+        Don't click here!
+    </div>
+<!--This code is at the moment not doing anything if you click it. 
+    If we want to dynamically add a click handler to the div element, 
+    we can select it and specify the property via the console:
+-->
+    <Script>
+        document.getElementById("one").onclick=function () {alert('Ouch! Stop it!')}
+    </Script>
+</body>
+</html>

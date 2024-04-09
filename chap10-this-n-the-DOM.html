@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html>   
+    <body>     
+        <script>      
+            function reveal(el){        
+                console.log(el);      
+                }    
+        </script>     
+        <!-- the special this keyword refers to the element of the DOM it belongs to.-->  
+        <button onclick="reveal(this)">Click here!</button>   <!--it will show the button element in the console because it belongs to it-->
+
+        <script>
+            //We can access the parent of this with a function like this:
+            function reveal(el){     
+                console.log(el.parentElement); //it will log the body cuz it's the parent element of the button;
+            } 
+        </script>
+    </body> 

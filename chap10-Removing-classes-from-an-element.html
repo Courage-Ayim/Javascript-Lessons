@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html>   
+    <body> 
+        
+        <style>      
+            .square {        
+                height: 100px;        
+                width: 100px;        
+                background-color: yellow;      
+            }      
+            .square.blue {        
+                background-color: blue;     
+            }    
+            </style>     
+            
+            <div id="shape" class="square blue"></div>      
+            <button onclick="change()">Change!</button>   
+
+        <script>      
+            function change(){        
+                document.getElementById("shape").classList.remove("blue");      
+                }    
+        </script>     
+        
+        <!--When the button gets pressed, the change function gets triggered. 
+            This function removes the blue class, which removes the blue background color from the layout, 
+            leaving us with the yellow background color and the square will turn yellow.
+        -->
+    </body> 
+</html> 

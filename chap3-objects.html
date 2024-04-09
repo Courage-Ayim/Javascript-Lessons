@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create onject my car
+        const myCar ={
+            make: "toyota",  //property: "value"
+            model: "camry",
+            tires: 4,
+            doors: 4,
+            color: "blue",
+            forSale: false,
+        }
+        let propColor = "color";      //propcolor is the variable  to hold string color
+        myCar[propColor] = "red";    //assign new value to the color property
+        propColor = "forSale";      //use same var to assign new property string forSale
+        myCar[propColor] = true;    //assign new value to the forSale property
+        console.log(myCar.make + " " + myCar.model); //output the properties; make and model into the console
+        console.log(myCar.forSale); //output the value of the property forSale into the console
+    </script>
+</body>
+</html>

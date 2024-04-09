@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Methods</title>
+</head>
+<body>
+    <script>
+       //Methods to get and set the elements of a date 
+        let d = new Date(); 
+        console.log("Day of week:", d.getDay()); 
+        console.log("Day of month:", d.getDate()); 
+        console.log("Month:", d.getMonth()); 
+        console.log("Year:", d.getFullYear()); 
+        console.log("Seconds:", d.getSeconds()); 
+        console.log("Milliseconds:", d.getMilliseconds()); 
+        console.log("Time:", d.getTime()); 
+         
+        d.setFullYear(2010); 
+        console.log(d); 
+        d.setMonth(9); 
+        console.log(d);
+        d.setDate(10); 
+        console.log(d); 
+        d.setHours(10); 
+        console.log(d);
+        d.setTime(1622889770682); 
+        console.log(d); 
+
+
+        let d1 = Date.parse("June 5, 2021"); //parse() method can parse epoch dates from strings 
+                                             //i.e it translate dates from string format to epoch dates
+        console.log(d1); 
+
+
+        console.log(d.toDateString()); //converts dates to strings
+        console.log(d.toLocaleDateString()); //converts dates to number format
+
+    </script>
+</body>
+</html>

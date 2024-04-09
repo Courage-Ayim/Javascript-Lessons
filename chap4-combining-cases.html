@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 4.5</title>
+</head>
+<body>
+    <script>
+        let prize = prompt("input a value in betweent 0 and 10");
+        prize = Number(prize);
+        message = "My selection: ";
+        switch(prize){
+            case 0:
+                output = message + "gold";
+                break;
+            case 1:
+                output = message + "silver";
+                break;
+            case 2:
+                output = message + "bronze";
+                break;
+            case 3:
+                output = message + "ruby";
+                break;
+            case 4:
+                output = message + "pearl";
+                break;
+            case 5:
+                output = message + "iron";
+                break;
+            default:
+                output = message + "sorry try again";
+        }
+        console.log(output);
+
+
+
+    </script>
+</body>
+</html>

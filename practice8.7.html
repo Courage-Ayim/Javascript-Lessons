@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 8.8</title>
+</head>
+<body>
+    <script>
+      //Task: Output the date with the full month name into the console
+
+      let future = new Date(2035, 6, 7);
+      console.log(future);
+      const mon = ["January", "February", "March", "April", "May", "June",
+                   "July", "August", "September", "October", "November", "December"];
+      let day = future.getDay();
+      let month = future.getMonth();
+      let year = future.getFullYear();
+      let myDate = `${mon[month-1]} ${day} ${year}`
+      console.log(myDate); 
+
+        
+    </script>
+</body>
+</html>

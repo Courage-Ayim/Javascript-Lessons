@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Vehicle{
+            constructor(currentSpeed, maxSpeed, color){
+                this.currentSpeed = currentSpeed;
+                this.maxSpeed = maxSpeed;
+                this.color = color;
+            }
+            move(){
+                console.log ("moving at ", this.currentSpeed);
+            }
+            accelerate(amount){
+                this.currentSpeed =+ amount;
+            }
+        }
+
+        class Motocycle extends Vehicle{
+            constructor(currentSpeed, maxSpeed, color, fuel){
+                super (currentSpeed, maxSpeed, console);
+                this.fuel = fuel;
+            }
+            doWheelie(){
+                console.log("driving on one wheel!");
+            }
+        }
+
+        let motor = new Motocycle(0, 250, "black", "gasoline");
+        console.log(motor.color);
+        motor.accelerate(50);
+        motor.move()
+    </script>
+</body>
+</html>

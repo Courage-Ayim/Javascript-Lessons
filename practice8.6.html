@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 8.6</title>
+</head>
+<body>
+    <script>
+        console.log(Math.PI);
+        console.log(Math.ceil(5.7));
+        console.log(Math.floor(5.7));
+        console.log(Math.round(5.7));
+        console.log(Math.random());
+        console.log(Math.floor(Math.random()*11)); //outputs a random number btw 0-10
+        console.log(Math.floor(Math.random()*10)+1); //outputs a random number btw 1-10
+        console.log(Math.floor(Math.random()*100)+1); //outputs a random number btw 1-100
+
+        function ranNum(min, max) {     
+            return Math.floor(Math.random() * (max - min + 1)) + min; }
+            for (let x = 0; x < 100; x++) {     
+                 console.log(ranNum(1, 100)); }
+    </script>
+</body>
+</html>
